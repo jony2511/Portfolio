@@ -5,9 +5,10 @@ if (!is_logged_in()) {
     redirect('login.php');
 }
 
+
+
 // Handle form submissions
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Handle skill operations
     if (isset($_POST['add_skill'])) {
         $name = $_POST['skill_name'];
         $percentage = $_POST['percentage'];
@@ -49,7 +50,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             set_flash_message('Error deleting skill: ' . $e->getMessage(), 'error');
         }
     }
-
     // Handle project operations
     elseif (isset($_POST['add_project'])) {
         $title = $_POST['title'];
@@ -112,7 +112,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Redirect to avoid form resubmission
     redirect('admin.php');
 }
-
 // Fetch skills
 $sql = "SELECT * FROM skills ORDER BY category, name";
 $stmt = $db->prepare($sql);
