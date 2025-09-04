@@ -1,8 +1,37 @@
 /* Contact Form Labels - Dark Mode */
-.dark-mode .contact-form label {
+.dark-mode .contact-form label,
+.dark-mode .contact-form h4,
+.dark-mode .contact-info h3,
+.dark-mode .contact-item p {
     color: #fff;
     font-weight: 500;
     letter-spacing: 0.5px;
+    text-shadow: 0 0 10px rgba(139, 92, 246, 0.3);
+}
+
+.dark-mode .contact-icon {
+    color: #a78bfa;
+    text-shadow: 0 0 15px rgba(139, 92, 246, 0.4);
+}
+
+/* Animated Background - Dark Mode */
+.dark-mode {
+    position: relative;
+}
+
+.dark-mode::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 15% 50%, rgba(139, 92, 246, 0.08) 0%, transparent 25%),
+        radial-gradient(circle at 85% 30%, rgba(167, 139, 250, 0.08) 0%, transparent 25%);
+    animation: backgroundShift 15s ease-in-out infinite alternate;
+    pointer-events: none;
+    z-index: 0;
 }
 
 /* Stats Section Card View - Dark Mode */

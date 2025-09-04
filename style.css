@@ -1,3 +1,86 @@
+/* Global Font Settings */
+html, 
+body,
+input,
+button,
+textarea,
+select,
+div,
+p,
+span,
+h1, h2, h3, h4, h5, h6,
+a {
+    font-family: 'Exo', sans-serif !important;
+}
+
+/* Animated Background - Light Mode */
+body {
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 15% 50%, rgba(79, 70, 229, 0.08) 0%, transparent 25%),
+        radial-gradient(circle at 85% 30%, rgba(236, 72, 153, 0.08) 0%, transparent 25%);
+    animation: backgroundShift 15s ease-in-out infinite alternate;
+    pointer-events: none;
+    z-index: 0;
+}
+
+@keyframes backgroundShift {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+/* Typography Scale */
+h1, .h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+h2, .h2, .section-title {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+h3, .h3 {
+    font-weight: 600;
+    font-size: 1.75rem;
+}
+
+h4, .h4 {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+p, .body-text {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.nav-menu, .btn, button {
+    font-weight: 500;
+}
+
+.text-light {
+    font-weight: 300;
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
 :root {
     /* Light theme variables */
     --primary-color: #4f46e5;

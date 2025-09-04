@@ -6,7 +6,7 @@ if (!verify_db_connection()) {
     die("Database connection error. Please try again later.");
 }
 
-// Redirect if already logged in
+Redirect if already logged in
 if (is_logged_in()) {
     redirect('admin.php');
 }
