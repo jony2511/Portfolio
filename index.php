@@ -190,12 +190,12 @@ try {
 
                 <div class="about-stats" data-aos="fade-up">
                     <div class="stat-box" data-aos="zoom-in" data-aos-delay="100">
-                        <div class="stat-number">0+</div>
-                        <div class="stat-label">Technologies</div>
+                       <div class="stat-number"><?php echo count($skills); ?>+</div>
+                        <div class="stat-label">Technical Skills</div>
                     </div>
                     <div class="stat-box" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="stat-number">0+</div>
-                        <div class="stat-label">Projects</div>
+                         <div class="stat-number"><?php echo count($projects); ?>+</div>
+                        <div class="stat-label">Projects Completed</div>
                     </div>
                     <div class="stat-box" data-aos="zoom-in" data-aos-delay="300">
                         <div class="stat-number">KUET</div>
@@ -219,7 +219,7 @@ try {
                         </ul>
                     </div>
                 </div>
-                <div class="about-stats" data-aos="fade-left">
+                <!-- <div class="about-stats" data-aos="fade-left">
                     <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
                         <div class="stat-number"><?php echo count($skills); ?>+</div>
                         <div class="stat-label">Technical Skills</div>
@@ -240,7 +240,7 @@ try {
                         <div class="stat-label">Computer Science & Engineering</div>
                         <div class="stat-icon"><i class="fas fa-laptop-code"></i></div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -367,7 +367,7 @@ try {
                         <i class="fas fa-envelope contact-icon"></i>
                         <div>
                             <h4>Email</h4>
-                            <p>mtijony2@gmail.com</p>
+                            <p>mdtarifulislamjony@gmail.com</p>
                         </div>
                     </div>
 
@@ -375,7 +375,7 @@ try {
                         <i class="fas fa-phone contact-icon"></i>
                         <div>
                             <h4>Phone</h4>
-                            <p>013*******</p>
+                            <p>01316438490</p>
                         </div>
                     </div>
 

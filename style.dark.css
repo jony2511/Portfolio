@@ -1,3 +1,49 @@
+/* Contact Form Labels - Dark Mode */
+.dark-mode .contact-form label {
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* Stats Section Card View - Dark Mode */
+.dark-mode .stats-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 60px;
+}
+.dark-mode .stat-card {
+    background: var(--card-background);
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(180, 140, 255, 0.12);
+    padding: 32px 28px;
+    min-width: 220px;
+    text-align: center;
+    transition: box-shadow 0.2s, border-color 0.2s;
+    border: 1px solid #3a2e5c;
+}
+.dark-mode .stat-card:hover {
+    box-shadow: 0 8px 32px rgba(180, 140, 255, 0.22);
+    border-color: #b48cff;
+}
+.dark-mode .stat-item {
+    color: #b48cff;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.dark-mode .stat-label {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+.dark-mode .stat-desc {
+    color: #eaeaea;
+    font-size: 1rem;
+    font-weight: 300;
+}
 /* Dark mode specific styles */
 .dark-mode {
     --primary-color: #8b5cf6;
